@@ -1,28 +1,22 @@
-/*
-
-TemplateMo 583 Festava Live
-
-https://templatemo.com/tm-583-festava-live
-
-*/
-
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
 
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #F8CB2E;
-  --secondary-color:              #EE5007;
+  --primary-color:                #ffe99a;
+  --secondary-color:              #818181;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #EE5007;
-  --custom-btn-bg-hover-color:    #c01f27;
+  --custom-btn-bg-color:          #6b6b6b;
+  --custom-btn-bg-hover-color:    #9e9e9e;
   --dark-color:                   #000000;
   --p-color:                      #717275;
   --border-color:                 #7fffd4;
   --link-hover-color:             #B22727;
 
-  --body-font-family:             'Outfit', sans-serif;
+  --body-font-family:             'Helvetica-Light', sans-serif;
+  --title-font-family:            'pridi', serif;
 
   --h1-font-size:                 74px;
   --h2-font-size:                 46px;
@@ -49,9 +43,13 @@ body {
 }
 
 
+
+
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
+
+  
 
 h2,
 h3,
@@ -379,7 +377,9 @@ strong {
 .navbar-brand:hover {
   color: var(--white-color);
   font-size: var(--h5-font-size);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-medium);
+  font-family: var(--title-font-family);
+  letter-spacing: .5rem;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -821,28 +821,36 @@ strong {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
+  height: 90vh;
   background-color: var(--dark-color);
   position: relative;
   overflow: hidden;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
+  background-image: url('../images/footer.avif');
+  position: relative;
+  background-size: 100vw auto; /* Full screen width */
+  background-repeat: no-repeat;
+  background-position: center calc(100% + 55px); /* Push image down by 50px */
 }
 
 .site-footer-top {
-  background-color: var(--secondary-color);
-  background-image: url('../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
+  background-color: black;
   background-repeat: no-repeat;
   margin-bottom: 70px;
   padding-top: 30px;
   padding-bottom: 30px;
+  /* i want the background to fit at the bottom and be the witdth of the screen; */
 }
 
 .site-footer-bottom {
   border-top: 1px solid #1f1c1c;
   margin-top: 60px;
+
 }
 
 .site-footer-title {
-  color: var(--primary-color); 
+  color: white; 
+  font-family: var(--title-font-family);
 }
 
 .site-footer-link,
@@ -862,6 +870,11 @@ strong {
 
 .copyright-text {
   font-size: var(--copyright-font-size);
+}
+
+footer h3 {
+  font-family: var(--title-font-family);
+  font-weight: var(--font-weight-medium);
 }
 
 
