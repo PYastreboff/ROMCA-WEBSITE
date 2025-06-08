@@ -1120,6 +1120,16 @@ footer h3 {
 }
 
 
+.contact-form::placeholder {
+  color: white !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaaaaa !important;
+  opacity: 1;
+}
+
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
