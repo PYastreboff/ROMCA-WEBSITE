@@ -44,6 +44,7 @@ html {
   background-color: black;
 }
 
+
 body {
   background-color: var(--black-color);
   font-family: var(--body-font-family); 
@@ -241,7 +242,6 @@ strong {
 .link-fx-1 .icon line:last-child {
   transform-origin: 19px 15px;
 }
-
 
 /*---------------------------------------
   SECTION               
@@ -970,7 +970,7 @@ strong {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-color: var(--dark-color);
+  background-color: black !important;
   position: relative;
   overflow: hidden;
   padding-bottom: 0px;
@@ -998,7 +998,7 @@ strong {
 }
 
 .site-footer-bottom {
-  background-color: var(--primary-color);
+  background-color: black !important;
   padding-top: 30px;
   padding-bottom: 30px;
   height: 60vh;
@@ -1222,10 +1222,15 @@ textarea::placeholder {
   }
 
   .navbar {
-  background: transparent;
-  background: linear-gradient(0deg,rgba(0, 0, 0, 50%) 0%, rgba(0, 0, 0, 1) 40%);
-  z-index: 9;
-  font-size: 2rem;
+    background: transparent;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 50%) 0%, rgba(0, 0, 0, 1) 40%);
+    z-index: 9;
+    font-size: 2rem;
+  }
+
+  .site-footer-bottom {
+  height: 15vh;
+
 }
 }
 
