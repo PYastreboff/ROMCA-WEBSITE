@@ -1200,6 +1200,13 @@ footer h3 {
   .video-section .container {
     max-width: 95vw;
   }
+
+  .navbar {
+  background: transparent;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 50%) 0%, rgba(0, 0, 0, 1) 40%);
+  z-index: 9;
+  font-size: 2rem;
+}
 }
 
 
