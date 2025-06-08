@@ -186,6 +186,35 @@ strong {
   font-size: 32px;
 }
 
+.album-collapse p {
+  color: #bababa;
+}
+
+.album-card {
+  max-height: fit-content !important;
+  max-height: max-content !important;
+}
+
+.album-collapse p:hover {
+  color: var(--white-color)
+}
+.light {
+  font-weight: 50 !important;
+  color: #959595 !important;
+  max-width: 60vw;
+  align-self:  center;
+  justify-self:  center;
+}
+
+.stream-card a {
+  color: #bababa;
+  text-decoration: none;
+}
+
+.stream-card a:hover {
+  color: var(--white-color);
+}
+
 .icon {
   --size: 1em;
   height: var(--size);
