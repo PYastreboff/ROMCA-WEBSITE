@@ -576,6 +576,12 @@ strong {
   height: 100%;
 }
 
+.hero-overlay-image img {
+  max-width: 80vw !important;
+  width: 80vw !important;
+  height: auto !important;
+}
+
 
 
 /*---------------------------------------
@@ -1140,6 +1146,7 @@ textarea::placeholder {
   color: #959595 !important;
 }
 
+
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
@@ -1229,11 +1236,10 @@ textarea::placeholder {
   }
 
   .site-footer-bottom {
-  height: 15vh;
+    height: 15vh;
+  }
 
 }
-}
-
 
 @media screen and (max-width: 767px) {
   .custom-btn {
