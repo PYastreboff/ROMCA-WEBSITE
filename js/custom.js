@@ -60,3 +60,23 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 }
 );
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Remove 'active' class from all <li> elements
+  document.querySelectorAll("li.active").forEach(function (li) {
+    li.classList.remove("active");
+  });
+
+  // Get the last part of the current URL path
+  const path = location.pathname.match(/[^\\/]+$/);
+  const page = path ? path[0] : "";
+  /*
+  // Find all anchor tags and match by href
+  document.querySelectorAll(`a[href$="${page}"]`).forEach(function (a) {
+    const li = a.closest("li");
+    if (li) {
+      li.classList.add("active");
+    }
+  });
+  */
+});
