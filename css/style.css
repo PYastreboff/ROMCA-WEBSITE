@@ -582,6 +582,10 @@ strong {
   height: auto !important;
 }
 
+header:hover {
+  background-color: var(--custom-btn-bg-hover-color);
+}
+
 
 
 /*---------------------------------------
