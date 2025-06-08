@@ -586,6 +586,14 @@ header:hover {
   background-color: var(--custom-btn-bg-hover-color);
 }
 
+button.disabled {
+  opacity: 0.2 !important;
+}
+
+button.disabled:hover {
+  cursor: not-allowed !important;
+}
+
 
 
 /*---------------------------------------
