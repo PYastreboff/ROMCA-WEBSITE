@@ -1,0 +1,5 @@
+powershell script to randomise the images (Windows):
+Get-ChildItem *.jpg | Sort-Object {Get-Random} | ForEach-Object -Begin {$i=1} -Process {Rename-Item $_ -NewName ("temp_$i.jpg"); $i++}; $i=1; Get-ChildItem temp_*.jpg | Sort-Object Name | ForEach-Object {Rename-Item $_ -NewName ("$i.jpg"); $i++}
+
+zsh command to randomise (Mac):
+i=1; for f in $(ls *.jpg | sort -R); do mv "$f" "temp_$i.jpg"; ((i++)); done; i=1; for f in temp_*.jpg; do mv "$f" "$i.jpg"; ((i++)); done
