@@ -1297,13 +1297,17 @@ textarea::placeholder {
     width: 90% !important;
   }
 
-  .resp-centre {
-    width: 100% !important;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    align-self: centre;
+  .footer-titles {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
+
+  .resp-centre {
+    max-width: 90%; /* optional: keeps it within the screen */
+    margin: 0 auto;
+  } 
 }
 
 @media screen and (max-width: 767px) {
