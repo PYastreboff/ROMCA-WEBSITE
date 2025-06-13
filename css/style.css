@@ -1235,8 +1235,8 @@ textarea::placeholder {
 }
 
 .modal-content {
-    max-width: 90vw;
-    max-height: 90vh;
+    max-width: 80vw;
+    max-height: 70vh;
     width: auto;
     height: auto;
     object-fit: contain;

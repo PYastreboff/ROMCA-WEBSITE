@@ -1,4 +1,5 @@
-const gallery = document.getElementById('gallery');
+// Generate image elements for 1-33.jpg
+const gallery = document.getElementById('gallery2');
 for (let i = 1; i <= 33; i++) {
     const item = document.createElement('div');
     item.className = 'gallery-item';
