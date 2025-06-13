@@ -1308,6 +1308,10 @@ textarea::placeholder {
     max-width: 90%; /* optional: keeps it within the screen */
     margin: 0 auto;
   } 
+
+  .resp-centre p {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
