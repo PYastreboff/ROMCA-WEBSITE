@@ -237,13 +237,13 @@
         </section>
 
         <section class="events-section section-padding" id="gallery" style="background-color: #000000; color: #ffffff; padding-bottom:1rem !important">
-        <section class="events-section section-padding" id="gallery" style="background-color: #000000; color: #ffffff; padding-bottom:1rem !important">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
                     <h2 class="mb-2 events-title" style="padding-top: 1rem; font-size: 4rem;">Our Gallery</h2>
                 </div>
             </div>
+            <!--
             <div class="row g-4 mt-4" id="gallery-container">
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="gallery-item">
@@ -276,7 +276,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Modals for initial 6 images -->
+             Modals for initial 6 images 
             <div class="modal fade" id="galleryModal1" tabindex="-1" aria-labelledby="galleryModalLabel1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content" style="background-color: #000000; border: none;">
@@ -345,13 +345,22 @@
                         </div>
                         <div class="modal-body text-center">
                             <img src="images/gallery/6.jpg" class="img-fluid" alt="Gallery Image 6" style="max-width: 100%; height: auto;" loading="lazy">
-                             <!--<p class="mt-3 text-white" style="font-size: 1.1rem;">Image Description.</p>-->
+                             <p class="mt-3 text-white" style="font-size: 1.1rem;">Image Description.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Container for dynamically added modals -->
+
+             Container for dynamically added modals
             <div id="modal-container"></div>
+            -->
+            <div class="gallery" id="gallery">
+            </div>
+
+            <div id="imageModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
+            </div>
         </div>
     </section>
         
@@ -440,6 +449,7 @@
     <script src="js/click-scroll.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/lazyload.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
