@@ -1253,6 +1253,12 @@ textarea::placeholder {
     cursor: pointer;
 }
 
+.gallery-iframe {
+  width: 100vw !important;
+  background-color: black;
+  height: fit-content;
+}
+
 @media (max-width: 768px) {
     .gallery {
         column-count: 2;
