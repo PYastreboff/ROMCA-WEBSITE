@@ -1259,6 +1259,21 @@ textarea::placeholder {
   height: fit-content;
 }
 
+
+.donation-section .btn-group .btn {
+    min-width: 120px;
+}
+.donation-section .custom-amount-input {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+
+
+
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
 @media (max-width: 768px) {
     .gallery {
         column-count: 2;
@@ -1270,11 +1285,6 @@ textarea::placeholder {
         column-count: 1;
     }
 }
-
-
-/*---------------------------------------
-  RESPONSIVE STYLES               
------------------------------------------*/
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 62px;
@@ -1419,6 +1429,25 @@ textarea::placeholder {
   .footer-links  .btn {
     align-self: last baseline;
     margin-bottom: 1rem;
+  }
+
+  .donation-bar a:not(:last-child) {
+    border-radius: 1rem !important;
+    width: 90vw;
+  }
+
+  .donation-bar a:last-child {
+    border-radius: 0 1rem 1rem 0 !important;
+  }
+
+  .donation-bar input {
+    border-radius: 1rem 0 0 1rem !important;
+  }
+
+  .donation-bar div {
+    width: 90vw !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
