@@ -1191,6 +1191,10 @@ textarea::placeholder {
   color: #959595 !important;
 }
 
+.about-desc-img {
+  max-width: 60%;
+}
+
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -1275,7 +1279,7 @@ textarea::placeholder {
 
   .navbar {
     background: transparent;
-    background: linear-gradient(0deg,rgba(0, 0, 0, 50%) 0%, rgba(0, 0, 0, 1) 40%);
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0%) 0%, rgba(0, 0, 0, 1) 75%);
     z-index: 9;
     font-size: 2rem;
   }
@@ -1286,6 +1290,11 @@ textarea::placeholder {
 
   .inline-text {
     display: none;
+  }
+
+  .about-desc-img {
+    max-width: 90% !important;
+    width: 90% !important;
   }
 
 }
