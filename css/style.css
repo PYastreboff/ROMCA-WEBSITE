@@ -1312,6 +1312,38 @@ textarea::placeholder {
   .resp-centre p {
     width: 100% !important;
   }
+
+  .index-instagram {
+    margin-top: .5rem;
+  }
+
+  .index-and {
+    display: none;
+  }
+
+  .index-facebook {
+    margin-top: 1rem;
+  }
+
+  .hero-container {
+    height: fit-content !important;
+  }
+
+  .hero-section {
+    height: fit-content;
+  }
+
+  ul.social-icons {
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
+    justify-content: space-between;
+  }
+
+  .footer-links  .btn {
+    align-self: last baseline;
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
