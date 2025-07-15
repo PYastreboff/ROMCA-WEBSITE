@@ -119,14 +119,16 @@
                 </div>
             </div>
             <div class="video-wrap">
+                <img src="images/hero-vid-placeholder.png" alt="Video Placeholder" class="video-placeholder" />
+                
                 <video 
                     autoplay 
                     playsinline 
                     muted 
                     loop 
                     class="custom-video" 
-                    poster="">
-                    <source src="video/hero-vid.mp4" type="video/mp4">
+                    oncanplaythrough="this.previousElementSibling.style.display='none';">
+                    <source src="video/hero-vid-4k.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
