@@ -99,8 +99,14 @@ const html = `
 
 shadow.innerHTML = html;
 
+
+// +++================++================++================+++
+const numberOfImages = 39; // Total number of images in the gallery
+// +++================++================++================+++
+
+
 const gallery = shadow.getElementById('gallery');
-for (let i = 1; i <= 33; i++) {
+for (let i = 1; i <= numberOfImages; i++) {
     const item = document.createElement('div');
     item.className = 'gallery-item';
     const img = document.createElement('img');
