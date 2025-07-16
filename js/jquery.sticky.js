@@ -215,5 +215,5 @@
 })(jQuery);
 
 $(document).ready(function(){
-      $(".navbar").sticky({topSpacing:0});
-    });
+  $(".navbar").sticky({topSpacing:0});
+});
