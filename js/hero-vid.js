@@ -9,7 +9,6 @@ const placeholder = document.querySelector('.video-placeholder');
 // add video sources here
 const videoSources = [
     'video/hero-vid-1-4k.mp4',
-    'video/hero-vid-2-4k.mp4',
     'video/hero-vid-3-4k.mp4'
 ];
 let currentVideoIndex = 0;
