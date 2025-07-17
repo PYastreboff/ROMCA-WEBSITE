@@ -101,7 +101,7 @@ shadow.innerHTML = html;
 
 
 // +++================++================++================+++
-const numberOfImages = 39; // Total number of images in the gallery
+const numberOfImages = 53; // Total number of images in the gallery
 // +++================++================++================+++
 
 
