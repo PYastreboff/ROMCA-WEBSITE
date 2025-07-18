@@ -85,10 +85,43 @@
 
                 <!-- PayPal Button -->
                 <div style="margin-top: 2rem;">
-                <a href="https://www.paypal.com/donate" target="_blank">
-                    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate with PayPal button">
-                </a>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=PDFEDD9WTJ77J" id="donateLink" target="_blank" style="text-decoration: none;">
+                        <button id="donateButton">
+                            <img src="./images/paypal.svg" alt="PayPal">
+                            <span id="donateText">Donate Custom Amount via PayPal</span>
+                        </button>
+                    </a>
                 </div>
+
+                <script>
+                    // Function to get URL parameter by name
+                    function getUrlParameter(name) {
+                        const urlParams = new URLSearchParams(window.location.search);
+                        return urlParams.get(name);
+                    }
+
+                    // Get the amount parameter from the URL
+                    const amount = getUrlParameter('amount');
+
+                    // Get the button and link elements
+                    const donateButton = document.getElementById('donateText');
+                    const donateLink = document.getElementById('donateLink');
+
+                    // Update button text and link if amount is provided
+                    if (amount === "100") {
+                        donateButton.textContent = `Donate $${parseFloat(amount).toFixed(2)} via PayPal`;
+                        donateLink.href = "https://www.paypal.com/donate/?hosted_button_id=T544HQWTX4DLN";
+                    } else if (amount === "500") {
+                        donateButton.textContent = `Donate $${parseFloat(amount).toFixed(2)} via PayPal`;
+                        donateLink.href = "https://www.paypal.com/donate/?hosted_button_id=WVLCBRHTMYYEQ";
+                    } else if (amount === "1000") {
+                        donateButton.textContent = `Donate $${parseFloat(amount).toFixed(2)} via PayPal`;
+                        donateLink.href = "https://www.paypal.com/donate/?hosted_button_id=JMZHYF27FALAC";
+                    } else {
+                        donateButton.textContent = 'Donate Custom Amount via PayPal';
+                        donateLink.href = "https://www.paypal.com/donate/?hosted_button_id=PDFEDD9WTJ77J";
+                    }
+                </script>
 
                 <p style="margin-top: 1rem;"><i>For large donations and ongoing sponsorship opportunities please submit an enquiry below.</i></p>
                 <p style="margin-top: .5rem; color: #aaa;">Your support keeps our choir singing, so thank you again!</p>

@@ -1294,6 +1294,33 @@ textarea::placeholder {
 }
 
 
+#donateButton {
+  background-color: rgb(255, 209, 64);
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: rgb(8, 16, 59);
+}
+
+#donateButton:hover {
+  background-color: rgb(255, 231, 153);
+}
+
+#donateButton img {
+  height: 25px;
+  margin-right: 10px;
+}
+
 
 
 /*---------------------------------------
