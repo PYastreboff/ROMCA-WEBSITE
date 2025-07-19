@@ -1,5 +1,3 @@
-// script to keep formspree submission, then redirect to submit.html
-
 document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault(); // Stop default form submission
 
@@ -14,6 +12,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
         }
     }).then(response => {
         if (response.ok) {
+            form.reset(); // Clear all fields
             window.location.href = "./submit.html"; // Redirect on success
         } else {
             alert("Error submitting form. Please try again.");
