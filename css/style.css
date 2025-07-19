@@ -1489,7 +1489,7 @@ textarea::placeholder {
   }
 
   .donation-bar a:last-child {
-    border-radius: 0 1rem 1rem 0 !important;
+    border-radius: 1rem 1rem 1rem 1rem !important;
   }
 
   .donation-bar input {
