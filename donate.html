@@ -178,23 +178,24 @@
                         <form class="contact-form mb-4" action="https://formspree.io/f/mgvzvjwn" id="contactForm" method="POST" role="form">
                             <div class="row g-3">
                                 <div class="col-md-3 col-6">
-                                    <input type="text" class="form-control bg-dark text-white border-0" style="background-color: #333333;" placeholder="Name" required>
+                                    <input name="name" type="text" class="form-control bg-dark text-white border-0" style="background-color: #333333;" placeholder="Name" required>
                                 </div>
                                 <div class="col-md-3 col-6">
-                                    <input type="email" class="form-control bg-dark text-white border-0" style="background-color: #333333;" placeholder="Email" required>
+                                    <input name="email" type="email" class="form-control bg-dark text-white border-0" style="background-color: #333333;" placeholder="Email" required>
                                 </div>
                                 <div class="col-md-3 col-6">
-                                    <input type="text" class="form-control bg-dark text-white border-0" style="background-color: #333333;" placeholder="City" required>
+                                    <input name="city" type="text" class="form-control bg-dark text-white border-0" style="background-color: #333333;" placeholder="City" required>
                                 </div>
                                 <div class="col-md-3 col-6">
-                                    <input type="text" class="form-control bg-dark text-white border-0" style="background-color: #333333;" placeholder="Organisation (Optional)">
+                                    <input name="organisation" type="text" class="form-control bg-dark text-white border-0" style="background-color: #333333;" placeholder="Organisation (Optional)">
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control bg-dark text-white border-0" style="background-color: #333333; height: 100px;" placeholder="Message to Us" required></textarea>
+                                    <textarea name="message" class="form-control bg-dark text-white border-0" style="background-color: #333333; height: 100px;" placeholder="Message to Us" required></textarea>
                                 </div>
                                 <div class="col-12 text-end">
                                     <button type="submit" class="btn custom-btn" style="background-color: #444444; color: #ffffff; border: none;">SEND <i class="bi bi-arrow-right"></i></button>
                                 </div>
+                                <input type="hidden" name="_next" value="./submit.html">
                             </div>
                         </form>
                     </div>
