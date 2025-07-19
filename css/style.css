@@ -1322,6 +1322,9 @@ textarea::placeholder {
 }
 
 
+.contact-form button[type="submit"]:hover {
+  background-color: #7f7f7f !important;
+}
 
 /*---------------------------------------
   RESPONSIVE STYLES               
