@@ -186,6 +186,33 @@
                             })();
                         </script>
                     </div>
+
+                    
+                    <div class="col-lg-4 col-12 mb-4 event-card" data-expiry="2026-06-08T00:00:00" style="border: 0;">
+                        <a href="https://www.eventbrite.com.au/e/hymns-to-the-holy-trinity-tickets-1988548952447?aff=oddtdtcreator" target="_blank" style="text-decoration: none;">
+                            <div class="card h-100" style="background-color: #333333; color: #ffffff;">
+                                <img src="./images/events/hymns_to_the_holy_trinity.png" class="card-img-top" alt="Hymns to the Holy Trinity">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Hymns to the Holy Trinity</h5>
+                                    <p class="card-text">A spiritual concert dedicated to the Holy Trinity in Keysborough.</p>
+                                    <span class="btn custom-btn">BOOK NOW</span>
+                                </div>
+                            </div>
+                        </a>
+                    
+                        <script>
+                            (function () {
+                                const card = document.currentScript.parentElement;
+                                // data-expiry="YYYY-MM-DDTHH:MM:SS"
+                                const expiry = new Date(card.getAttribute("data-expiry"));
+                                const now = new Date();
+                    
+                                if (now >= expiry) {
+                                    card.style.display = "none";
+                                }
+                            })();
+                        </script>
+                    </div>
                     
                     <!--
                     <div class="col-lg-4 col-12 mb-4" style="border: 0;">
@@ -231,32 +258,6 @@
                         </a>
                     </div>
                     -->
-
-                    <div class="col-lg-4 col-12 mb-4 event-card" data-expiry="2026-06-08T00:00:00" style="border: 0;">
-                        <a href="https://www.eventbrite.com.au/e/hymns-to-the-holy-trinity-tickets-1988548952447?aff=oddtdtcreator" target="_blank" style="text-decoration: none;">
-                            <div class="card h-100" style="background-color: #333333; color: #ffffff;">
-                                <img src="./images/events/hymns_to_the_holy_trinity.png" class="card-img-top" alt="Hymns to the Holy Trinity">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Hymns to the Holy Trinity</h5>
-                                    <p class="card-text">A spiritual concert dedicated to the Holy Trinity in Keysborough.</p>
-                                    <span class="btn custom-btn">BOOK NOW</span>
-                                </div>
-                            </div>
-                        </a>
-                    
-                        <script>
-                            (function () {
-                                const card = document.currentScript.parentElement;
-                                // data-expiry="YYYY-MM-DDTHH:MM:SS"
-                                const expiry = new Date(card.getAttribute("data-expiry"));
-                                const now = new Date();
-                    
-                                if (now >= expiry) {
-                                    card.style.display = "none";
-                                }
-                            })();
-                        </script>
-                    </div>
 
 
                 </div>
