@@ -143,7 +143,7 @@
                         <h5 class="text-white mb-4">Discover Our Live Performances</h5>
                     </div>
 
-                    <!-- NO event Card -->
+                    <!-- NO event Card 
                     <div class="card-body text-center">
                         <p class="card-text">No events are scheduled at the moment. Stay tuned for our upcoming performances!</p>
                         <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
@@ -156,8 +156,9 @@
                             </a>
                         </div>
                     </div>
+                    -->
                     
-                    
+                    <!-- Anniversary X Concert -->
                     <div class="col-lg-4 col-12 mb-4 event-card" data-expiry="2026-09-07T00:00:00" style="border: 0;">
                         <a href="https://www.sydneyoperahouse.com/classical-music/romca-anniversary-x" target="_blank" style="text-decoration: none;">
                             <div class="card h-100" style="background-color: #333333; color: #ffffff;">
@@ -184,7 +185,34 @@
                         </script>
                     </div>
 
-                    <!-- Anniversary X Concert -->
+                    <!-- Pokrov Concert -->
+                    <div class="col-lg-4 col-12 mb-4 event-card" data-expiry="2026-10-09T00:00:00" style="border: 0;">
+                        <a href="https://www.eventbrite.com.au/e/romca-concert-pokrov-tickets-2002119767119?aff=oddtdtcreator" target="_blank" style="text-decoration: none;">
+                            <div class="card h-100" style="background-color: #333333; color: #ffffff;">
+                                <img src="./images/events/pokrov.jpeg" class="card-img-top" alt="Pokrov Concert">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Pokroc</h5>
+                                    <p class="card-text">Selected hymns dedicated to the Mother of God.</p>
+                                    <span class="btn custom-btn">BOOK NOW</span>
+                                </div>
+                            </div>
+                        </a>
+                    
+                        <script>
+                            (function () {
+                                const card = document.currentScript.parentElement;
+                                // data-expiry="YYYY-MM-DDTHH:MM:SS"
+                                const expiry = new Date(card.getAttribute("data-expiry"));
+                                const now = new Date();
+                    
+                                if (now >= expiry) {
+                                    card.style.display = "none";
+                                }
+                            })();
+                        </script>
+                    </div>
+
+                    <!-- Hymns to the Holy Trinity Concert -->
                     <div class="col-lg-4 col-12 mb-4 event-card" data-expiry="2026-06-08T00:00:00" style="border: 0;">
                         <a href="https://www.eventbrite.com.au/e/hymns-to-the-holy-trinity-tickets-1988548952447?aff=oddtdtcreator" target="_blank" style="text-decoration: none;">
                             <div class="card h-100" style="background-color: #333333; color: #ffffff;">
